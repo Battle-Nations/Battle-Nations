@@ -28,6 +28,8 @@ public class PatreonAuthentication : DialogPanel
     public new void Open()
     {
         base.Open();
+        MenuConfig.Patreon = true;
+        CloseDialog();
 
         Title.text = "Patreon Authentication";
 
